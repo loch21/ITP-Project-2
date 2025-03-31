@@ -1,0 +1,173 @@
+/* Main Container */
+.payhere-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header Section */
+  .payhere-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .payhere-header h1 {
+    color: #2d3748;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .merchant-info {
+    background: #f8fafc;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+  
+  .merchant-info h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: #2d3748;
+  }
+  
+  .merchant-info p {
+    margin: 0.5rem 0;
+    color: #4a5568;
+    font-size: 0.95rem;
+  }
+  
+  .amount {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-top: 0.8rem;
+  }
+  
+  /* Payment Tabs */
+  .payment-tabs {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .payment-tabs button {
+    padding: 0.8rem 1.2rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+  }
+  
+  .payment-tabs button.active {
+    color: #4299e1;
+    border-bottom-color: #4299e1;
+  }
+  
+  .payment-tabs button:hover:not(.active) {
+    color: #2d3748;
+  }
+  
+  /* Card Form */
+  .card-form {
+    margin-top: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+  }
+  
+  .form-group input::placeholder {
+    color: #a0aec0;
+  }
+  
+  /* Form Row Layout */
+  .form-row {
+    display: flex;
+    gap: 1.2rem;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  /* Payment Button */
+  .pay-button {
+    width: 100%;
+    padding: 1rem;
+    background: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .pay-button:hover {
+    background: #3182ce;
+  }
+  
+  /* Back Button */
+  .back-button {
+    display: block;
+    margin: 2.5rem auto 0;
+    background: none;
+    border: none;
+    color: #4299e1;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-decoration: underline;
+    padding: 0.5rem;
+  }
+  
+  .back-button:hover {
+    color: #3182ce;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .payhere-container {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
